@@ -1,0 +1,2199 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: "Montserrat", sans-serif;
+    user-select: none;
+}
+
+body {
+    transition: all .3s;
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+a {
+    transition: all .3s;
+    text-decoration: none;
+}
+
+a:hover {
+    transition: all .3s;
+}
+
+.container {
+    /* justify-content: space-between; */
+    width: 100%;
+}
+
+header {
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    flex-wrap: nowrap;
+    text-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100px;
+    height: 100px;
+    max-height: 100px;
+    top: 0;
+    margin: 0;
+    border: none;
+    padding: 1rem;
+    font-size: 26px;
+    background: #fdecd0;
+    /* flex-direction: row; */
+    width: 100%;
+    /* background-color: rgb(255, 205, 176); */
+}
+
+.logo-a {
+    width: 5%;
+    /* padding: 25px 0px 10px 0px; */
+
+}
+
+.logo {
+    width: 180%;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 50px; */
+}
+
+.loginquit {
+    width: 15%;
+}
+
+.menu {
+    width: 80% !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav a li {
+    font-size: 25px;
+}
+
+button {
+    transition: all .3s;
+    width: 220px;
+    height: 50px;
+    font-size: 26px;
+    border-radius: 10px;
+    color: black;
+    background: #fcb316;
+    font-weight: 800;
+    /* margin: 50px 50px 20px 70px; */
+    cursor: pointer;
+}
+
+.orange {
+    color: #fcb316;
+    font-weight: 700;
+
+}
+
+.button-form {
+    transition: all .3s;
+    width: 100%;
+    height: 50px;
+    color: black;
+    font-size: 20px;
+    border-radius: 10px;;
+    background: #fcb316;
+    margin: 3rem auto;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.button-form:hover {
+    transition: all .1s;
+    border: 3px solid black;
+    background-color: transparent;
+    color: black;
+
+}
+
+.button-types {
+    margin-top: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+button:hover {
+    transition: all .1s;
+    border: 3px solid black;
+    color: black;
+    background: rgb(255, 210, 88);
+
+}
+
+.logo {
+    border-radius: 0;
+    border: 3px;
+}
+
+.nav li {
+    transition: all .3s;
+    display: inline;
+    padding: 30px 35px;
+    padding-top: 40px;
+    margin-top: 50px;
+    color: black;
+    font-weight: 800;
+}
+
+.nav li:hover {
+    transition: all .3s;
+    color: #fca017;
+
+}
+
+.nav li:active {
+    transition: all .3s;
+    color: black;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.header p {
+    padding: 40px 0 10px 0;
+    color: crimson;
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.kurs {
+    /* padding: 3rem; */
+}
+
+.kurs-prev {
+    text-align: center;
+    font-size: 35px;
+    padding-bottom: 0.5rem;
+}
+
+.kurs-info {
+    display: flex;
+}
+
+.img-kurs {
+    width: 40%;
+    height: 40%;
+    border-radius: 15%;
+    margin-top: 4rem;
+    margin-bottom: 12.5rem;
+    margin-left: 1.5rem;
+}
+
+.kurs-text {
+    padding-right: 3rem;
+    font-size: 2rem;
+    font-weight: 500;
+    padding-top: 5rem;
+    padding-left: 2rem;
+    width: 1000px;
+
+}
+
+section {
+
+    padding: 2rem;
+}
+
+ul {
+    line-height: 1.5;
+}
+
+ul.plus li {
+    list-style: none;
+    font-size: 20px;
+    text-align: left;
+}
+
+ul.plus li::before {
+    content: '✓';
+    margin-left: .5rem;
+    margin-right: .25rem;
+}
+
+main {
+
+    margin-top: 100px;
+}
+
+
+label {
+    margin-bottom: 1rem;
+
+}
+
+/* секция анкета */
+
+.profile-blank-item input, select {
+    font-size: 16px;
+}
+
+.profile-blank-item option {
+    color: #455cc6;
+    font-weight: 600;
+
+}
+
+
+.c-style {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #455cc6;
+    position: absolute;
+    border-radius: 5px;
+    margin-left: -25px;
+}
+
+.check_box:checked + .c-style::before {
+    content: "";
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #455cc6;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.mySwiper {
+    width: 70%;
+    height: 800px;
+    margin: 20px auto;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.mySwiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    background: #f0f0f0;
+}
+
+.mySwiper .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.review {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+    min-height: 200px;
+    height: auto;
+}
+
+.review-preview {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+.review__statistics__inner {
+    background: #fff;
+    box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+    border-radius: 16px;
+    margin: 0 0 80px 0;
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    width: 1500px;
+    align-items: center;
+    text-align: center;
+    padding: 28px 0px;
+    margin-top: 2rem;
+}
+
+.review__item {
+    flex: 0 1 33%;
+    text-align: center;
+}
+
+.review__item-title {
+    color: #fca017;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 3.4px;
+    margin-bottom: 5px;
+}
+
+.review__item-text {
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.footer {
+    height: 100px;
+    width: 100%;
+    background-color: #fdecd0;
+    padding: 1rem;
+    position: relative !important;;
+
+
+}
+
+.teacher-footer {
+    height: 100px;
+    width: 100%;
+    background-color: #fdecd0;
+    padding: 1rem;
+
+}
+
+.footer2 {
+    height: 100px;
+    width: 100%;
+    margin-top: 3rem;
+    background-color: #fdecd0;
+    position: relative;
+    right: 0;
+    bottom: 0;
+}
+
+.footer-login {
+    height: 100px;
+    width: 100%;
+    margin-top: 3rem;
+    background-color: #fdecd0;
+
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.fotter-p {
+    transition: all .3s;
+    font-size: 27px;
+    margin-top: 30px;
+    margin-left: 5rem;
+    font-weight: 800;
+    color: #fca017;
+}
+
+.fotter-p:hover {
+    transition: all .3s;
+    color: black;
+    cursor: pointer;
+}
+
+.app {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    color: #fff;
+}
+
+.app p {
+    text-align: right;
+}
+
+.app li {
+    width: 3%;
+    margin-top: 15px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.max {
+    width: 90%;
+    border-radius: 20%;
+}
+
+.swiper-h {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 28px;
+}
+
+.img-sw {
+    width: 15%;
+    margin-bottom: 2rem;
+}
+
+.swiper-preview {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 35px;
+}
+
+.swiper-block {
+    display: block;
+}
+
+
+.swiper-img {
+    display: block;
+}
+
+.slider-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.slider-container {
+    width: 80%;
+    max-width: 1200px;
+    background: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+.slider {
+    position: relative;
+}
+
+.slide {
+    display: none;
+    padding: 40px;
+    text-align: center;
+    width: 1200px;
+
+}
+
+
+.slide h2 {
+    font-size: 36px; /* Крупный заголовок */
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.slide img {
+    width: 750px;
+    height: 370px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.slide p {
+    font-size: 19px;
+    color: black;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+/* Навигация (кнопки) */
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 50%;
+    width: 50px; /* Увеличенные кнопки */
+    height: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 5s ease-in-out;
+    border: 2px solid rgba(0, 0, 0, 0.2); /* Тёмная рамка */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Мягкая тень */
+}
+
+.nav-button:hover {
+    background-color: #ecf0f1;
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.prev {
+    left: 20px;
+}
+
+/* Сдвигаем за пределы блока */
+.next {
+    right: 20px;
+}
+
+/* Индикаторы */
+.indicators {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.dot {
+    width: 16px;
+    height: 16px;
+    background-color: #bdc3c7;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.dot.active {
+    background-color: orange; 
+    transform: scale(1.4);
+}
+
+@media (max-width: 768px) {
+    .slider-container {
+        width: 95%;
+        max-width: none;
+    }
+
+    .slide h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .slide img {
+        margin-bottom: 20px;
+    }
+
+    .slide p {
+        font-size: 16px;
+    }
+
+    .nav-button {
+        width: 48px;
+        height: 48px;
+        font-size: 24px;
+        top: calc(50% - 24px);
+    }
+
+    .prev {
+        left: -28px;
+    }
+
+    .next {
+        right: -28px;
+    }
+
+    .dot {
+        width: 12px;
+        height: 12px;
+    }
+
+    .indicators {
+        bottom: -30px;
+        gap: 8px;
+    }
+}
+
+
+
+
+/* teacher вкладка */
+
+
+/* Секция преподавателей */
+.teachers-section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.teachers-section h2 {
+    text-align: center;
+    margin-bottom: 40px; /* Увеличили отступ после заголовка */
+    font-size: 2.5rem; /* Крупный заголовок */
+    color: #2c3e50; /* Насыщенный цвет */
+}
+
+/* Сетка карточек - стала адаптивнее */
+.teachers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Минимальная ширина карточки 300px */
+    gap: 25px; /* Расстояние между карточками */
+}
+
+/* Стиль карточки преподавателя - ОСНОВНЫЕ ИЗМЕНЕНИЯ ЗДЕСЬ */
+.teacher-card {
+    background-color: #ffffff; /* Чистый белый фон */
+    border-radius: 12px; /* Более плавные углы */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); /* Мягкая тень для объема */
+    padding: 35px; /* Увеличили внутренний отступ, чтобы было куда писать */
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Плавная анимация */
+    display: flex; /* Включаем Flexbox для удобного расположения контента */
+    flex-direction: column; /* Располагаем элементы вертикально */
+    justify-content: space-between; /* Отступы распределяются равномерно */
+    height: 100%; /* Карточка занимает всю высоту ячейки сетки */
+}
+
+.teacher-card:hover {
+    transform: translateY(-8px); /* Поднимается выше при наведении */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12); /* Тень становится больше */
+}
+
+.teacher-card h3 {
+    margin: 0 0 12px 0;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.teacher-card p {
+    margin: 8px 0;
+    font-size: 1.2rem;
+    color: black; /* Серый цвет для второстепенного текста (стаж) */
+}
+
+/* Добавим место для дополнительной информации (например, предмет или звание) */
+
+/* Стили модального окна - тоже немного улучшим */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 45px 35px; /* Больше отступов в модалке для длинного текста */
+    border-radius: 12px;
+    width: 95%;
+    max-width: 750px;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 22px;
+    right: 28px;
+    font-size: 28px;
+    cursor: pointer;
+
+}
+
+.img-modal {
+    margin-bottom: 1.5rem;
+    border-radius: 20%;
+    height: 400px;
+}
+
+.modal-name-h {
+    margin-bottom: 1rem;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.modal-name-p {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.modal-name-prize {
+    font-size: 18px;
+    line-height: 2rem;
+    letter-spacing: 0.8px;
+}
+
+.modal-name-education {
+    margin-bottom: 0.5rem;
+    font-size: 18px;
+    line-height: 2rem;
+    letter-spacing: 0.8px;
+    font-weight: 600;
+}
+
+
+.order-row {
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.order-row:hover {
+    background-color: #f0f0f0; /* Подсветка при наведении */
+}
+
+
+#quitButton, #accountLink, #adminLink, .admin-only-content {
+    display: none;
+}
+
+
+.user-info-bar {
+    text-align: center;
+    background: #f4f4f4;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+.user-info-bar b {
+    color: #fca017;
+}
+
+
+
+/* АДАПТАЦИЯ */
+/* ========== БУРГЕР-МЕНЮ ========== */
+.burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 1001;
+    position: relative;
+}
+
+.burger span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.burger.active span:nth-child(1) {
+    transform: translateY(11px) rotate(45deg);
+}
+
+.burger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.active span:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg);
+}
+
+
+/* ГЛАВНАЯ */
+/* ========== АДАПТАЦИЯ ДЛЯ НОУТБУКОВ (1025px - 1440px) ========== */
+@media (max-width: 1440px) {
+    header {
+        padding: 1rem 2rem;
+        justify-content: space-between;
+    }
+    .logo {
+        width: 200%;
+    }
+
+    .nav li {
+        padding: 30px 25px;
+        font-size: 22px;
+    }
+
+    .loginquit .button {
+        width: 180px;
+        font-size: 22px;
+    }
+
+    .kurs-text {
+        font-size: 1.8rem;
+        padding-top: 3rem;
+    }
+
+    .img-kurs {
+        width: 45%;
+        height: auto;
+    }
+
+    .slide img {
+        width: 100%;
+        height: auto;
+        max-height: 370px;
+        object-fit: cover;
+    }
+
+    .slide {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .slide p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1280px) {
+    .nav li {
+        padding: 30px 18px;
+        font-size: 20px;
+    }
+
+    .logo{
+        width: 80%;
+    }
+    .kurs-text {
+        font-size: 1.5rem;
+    }
+
+    .logo-a {
+        width: 180px;
+    }
+    .kurs-prev {
+        font-size: 30px;
+    }
+
+    .max{
+        width: 100%;
+    }
+    .loginquit .button {
+        width: 150px;
+        font-size: 20px;
+        height: 45px;
+    }
+}
+
+/* ========== АДАПТАЦИЯ ДЛЯ ПЛАНШЕТОВ (769px - 1024px) ========== */
+@media (max-width: 1024px) {
+    .burger {
+        display: flex;
+    }
+
+    header {
+        justify-content: space-between;
+        padding: 1rem 1.5rem;
+        min-height: 80px;
+        height: 80px;
+    }
+
+    .logo-a {
+        width: 140px;
+        z-index: 1001;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        max-width: 400px;
+        height: 100vh;
+        background: #fdecd0;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 100px;
+        transition: right 0.4s ease;
+        z-index: 1000;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    }
+    
+
+    .menu.active {
+        right: 0;
+    }
+
+    .nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav li {
+        display: block;
+        padding: 20px;
+        font-size: 22px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .loginquit {
+        width: auto;
+        z-index: 1001;
+    }
+
+    .loginquit .button {
+        width: 120px;
+        font-size: 18px;
+        height: 40px;
+    }
+
+    /* Контент */
+    main {
+        margin-top: 80px;
+    }
+
+    .kurs-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .kurs-text {
+        width: 90%;
+        padding: 1rem;
+        font-size: 1.3rem;
+        margin: 0 auto;
+    }
+
+    .img-kurs {
+        width: 80%;
+        margin: 1rem auto;
+    }
+
+    .slider-container {
+        width: 95%;
+    }
+
+    .slide {
+        padding: 20px;
+    }
+
+    .slide h2 {
+        font-size: 28px;
+    }
+
+    .slide p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .nav-button {
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+    }
+
+    .prev {
+        left: 5px;
+    }
+
+    .next {
+        right: 5px;
+    }
+
+    .review__statistics__inner {
+        width: 90%;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .review__item {
+        flex: 0 1 100%;
+        margin-bottom: 15px;
+    }
+
+    .footer .app {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .fotter-p {
+        margin: 0 1rem;
+        font-size: 22px;
+    }
+
+    .app li {
+        width: auto;
+        margin: 0.5rem;
+    }
+}
+
+/* ========== АДАПТАЦИЯ ДЛЯ ТЕЛЕФОНОВ (320px - 768px) ========== */
+@media (max-width: 768px) {
+    header {
+        padding: 0.8rem 1rem;
+        min-height: 65px;
+        height: 65px;
+    }
+
+    .logo-a {
+        width: 100px;
+    }
+
+    .loginquit .button {
+        width: 90px;
+        font-size: 14px;
+        height: 35px;
+    }
+
+    .burger {
+        width: 30px;
+        height: 22px;
+    }
+
+    .menu {
+        width: 85%;
+        max-width: 320px;
+    }
+
+    .nav li {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    main {
+        margin-top: 65px;
+    }
+
+    .kurs-prev {
+        font-size: 24px;
+        padding: 0 1rem;
+    }
+
+    .kurs-text {
+        font-size: 1rem;
+        padding: 0.5rem;
+        width: 95%;
+    }
+
+    .img-kurs {
+        width: 95%;
+    }
+
+    .slider-container {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .slide {
+        padding: 15px;
+    }
+
+    .slide h2 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .slide p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+
+    .nav-button {
+        width: 32px;
+        height: 32px;
+        font-size: 18px;
+    }
+
+    .prev {
+        left: 0px;
+    }
+
+    .next {
+        right: 0px;
+    }
+
+    .indicators {
+        bottom: -20px;
+        gap: 8px;
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+
+    .button-types .button-type2 {
+        width: 180px;
+        font-size: 18px;
+        height: 45px;
+    }
+
+    .review-preview {
+        font-size: 24px;
+        margin-top: 1rem;
+    }
+
+    .review__statistics__inner {
+        width: 95%;
+        margin: 1rem auto;
+        padding: 15px;
+    }
+
+    .review__item-title {
+        font-size: 28px;
+    }
+
+    .review__item-text {
+        font-size: 14px;
+    }
+
+    .footer {
+        height: auto;
+        padding: 1rem;
+    }
+
+    .footer .app {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .fotter-p {
+        font-size: 16px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .app li {
+        margin: 0;
+    }
+
+    .app li img {
+        width: 35px;
+    }
+}
+
+/* ========== ДЛЯ ОЧЕНЬ МАЛЕНЬКИХ ТЕЛЕФОНОВ (до 480px) ========== */
+@media (max-width: 480px) {
+    .kurs-prev {
+        font-size: 20px;
+    }
+
+    .kurs-text {
+        font-size: 0.9rem;
+    }
+
+    .slide h2 {
+        font-size: 18px;
+    }
+
+    .slide p {
+        font-size: 0.75rem;
+    }
+
+    .nav-button {
+        width: 28px;
+        height: 28px;
+        font-size: 14px;
+    }
+
+    .button-types .button-type2 {
+        width: 150px;
+        font-size: 16px;
+        height: 40px;
+    }
+
+    .review__item-title {
+        font-size: 24px;
+    }
+
+    .review__item-text {
+        font-size: 12px;
+    }
+}
+
+/* ========== БЛОКИРОВКА ПРОКРУТКИ ПРИ ОТКРЫТОМ МЕНЮ ========== */
+body.menu-open {
+    overflow: hidden;
+}
+
+/* О НАС */
+/* ========== АДАПТАЦИЯ ДЛЯ НОУТБУКОВ (1025px - 1440px) ========== */
+@media (max-width: 1440px) {
+    header {
+        padding: 1rem 2rem;
+        justify-content: space-between;
+    }
+
+    .mySwiper{
+        width: 100%;
+    }
+    .nav li {
+        padding: 30px 25px;
+        font-size: 22px;
+    }
+
+    .loginquit .button {
+        width: 180px;
+        font-size: 22px;
+    }
+
+    swiper-slide img {
+        width: 70%;
+        height: 550px;
+    }
+
+    .review__statistics__inner {
+        width: 90%;
+        max-width: 1200px;
+    }
+
+    .review__item-title {
+        font-size: 32px;
+    }
+
+    .review__item-text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .nav li {
+        padding: 30px 18px;
+        font-size: 20px;
+    }
+
+    .logo-a {
+        width: 180px;
+    }
+
+    .loginquit .button {
+        width: 150px;
+        font-size: 20px;
+        height: 45px;
+    }
+
+    swiper-slide img {
+        height: 450px;
+        width: 75%;
+    }
+}
+
+/* ========== АДАПТАЦИЯ ДЛЯ ПЛАНШЕТОВ (769px - 1024px) ========== */
+@media (max-width: 1024px) {
+    /* Бургер-меню */
+    .burger {
+        display: flex;
+    }
+
+    header {
+        justify-content: space-between;
+        padding: 1rem 1.5rem;
+        min-height: 80px;
+        height: 80px;
+    }
+
+    .logo-a {
+        width: 140px;
+        z-index: 1001;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        max-width: 400px;
+        height: 100vh;
+        background: #fdecd0;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 100px;
+        transition: right 0.4s ease;
+        z-index: 1000;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu.active {
+        right: 0;
+    }
+
+    .nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav li {
+        display: block;
+        padding: 20px;
+        font-size: 22px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .loginquit {
+        width: auto;
+        z-index: 1001;
+    }
+
+    .loginquit .button {
+        width: 120px;
+        font-size: 18px;
+        height: 40px;
+    }
+
+    /* Основной контент about.html */
+    main {
+        margin-top: 80px;
+    }
+
+    .swiper-preview {
+        font-size: 28px;
+        margin-top: 0.5rem;
+    }
+
+    swiper-slide img {
+        width: 85%;
+        height: 380px;
+        border-width: 3px;
+    }
+
+    .review {
+        padding: 1rem;
+    }
+
+    .review-preview {
+        font-size: 28px;
+        margin-top: 1rem;
+    }
+
+    .review__statistics__inner {
+        width: 95%;
+        flex-wrap: wrap;
+        padding: 20px 10px;
+        margin: 1rem auto;
+    }
+
+    .review__item {
+        flex: 0 1 50%;
+        margin-bottom: 20px;
+    }
+
+    .review__item-title {
+        font-size: 28px;
+        letter-spacing: 2px;
+    }
+
+    .review__item-text {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    .swiper-h {
+        font-size: 24px;
+        margin: 1rem;
+    }
+
+    iframe {
+        height: 400px;
+        width: 95%;
+    }
+    .mySwiper {
+        width: 100%;
+        height: 500px;
+    }
+
+    /* Футер */
+    
+    .footer {
+        height: auto;
+        padding: 1rem;
+    }
+
+    .footer .app {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .fotter-p {
+        font-size: 16px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .app li {
+        margin: 0;
+    }
+
+    .app li img {
+        width: 35px;
+    }
+}
+
+/* ========== АДАПТАЦИЯ ДЛЯ ТЕЛЕФОНОВ (320px - 768px) ========== */
+@media (max-width: 768px) {
+    header {
+        padding: 0.8rem 1rem;
+        min-height: 65px;
+        height: 65px;
+    }
+
+    .logo-a {
+        width: 100px;
+    }
+
+    .loginquit .button {
+        width: 90px;
+        font-size: 14px;
+        height: 35px;
+    }
+
+    .burger {
+        width: 30px;
+        height: 22px;
+    }
+
+    .burger.active span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .burger.active span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    .menu {
+        width: 85%;
+        max-width: 320px;
+        padding-top: 80px;
+    }
+
+    .nav li {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    main {
+        margin-top: 65px;
+    }
+
+    .swiper-preview {
+        font-size: 24px;
+    }
+
+    swiper-slide img {
+        width: 95%;
+        height: 250px;
+        border-width: 3px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .review {
+        padding: 0.5rem;
+    }
+
+    .review-preview {
+        font-size: 24px;
+    }
+
+    .review__statistics__inner {
+        width: 100%;
+        padding: 15px 5px;
+    }
+
+    .review__item {
+        flex: 0 1 100%;
+        margin-bottom: 15px;
+    }
+
+    .review__item-title {
+        font-size: 24px;
+        letter-spacing: 1px;
+    }
+
+    .review__item-text {
+        font-size: 14px;
+        letter-spacing: 0.5px;
+    }
+
+    .swiper-h {
+        font-size: 20px;
+        margin: 0.5rem;
+    }
+
+    iframe {
+        height: 300px;
+        width: 95%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .footer {
+        height: auto;
+        padding: 1rem;
+    }
+
+    .footer .app {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .fotter-p {
+        font-size: 16px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .app li {
+        margin: 0;
+    }
+
+    .app li img {
+        width: 35px;
+    }
+}
+
+/* ========== ДЛЯ ОЧЕНЬ МАЛЕНЬКИХ ТЕЛЕФОНОВ (до 480px) ========== */
+@media (max-width: 480px) {
+    .swiper-preview {
+        font-size: 20px;
+    }
+
+    swiper-slide img {
+        height: 200px;
+        border-radius: 12px;
+    }
+
+    .review-preview {
+        font-size: 20px;
+    }
+
+    .review__item-title {
+        font-size: 20px;
+    }
+
+    .review__item-text {
+        font-size: 12px;
+    }
+
+    .swiper-h {
+        font-size: 18px;
+    }
+
+    iframe {
+        height: 250px;
+    }
+
+    .fotter-p {
+        font-size: 14px;
+    }
+}
+
+/* ========== ДЛЯ ТЕЛЕФОНОВ В ЛАНДШАФТНОЙ ОРИЕНТАЦИИ ========== */
+@media (max-width: 900px) and (orientation: landscape) {
+    header {
+        min-height: 60px;
+        height: 60px;
+    }
+
+    main {
+        margin-top: 60px;
+    }
+
+    .menu {
+        padding-top: 70px;
+    }
+
+    .nav li {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    swiper-slide img {
+        height: 180px;
+    }
+
+    .review__statistics__inner {
+        padding: 10px;
+    }
+
+    .review__item {
+        margin-bottom: 8px;
+    }
+}
+
+/* ========== БЛОКИРОВКА ПРОКРУТКИ ПРИ ОТКРЫТОМ МЕНЮ ========== */
+body.menu-open {
+    overflow: hidden;
+}
+
+
+
+
+/* СТРАНИЦА ПРЕПОДАВАТЕЛИ */
+/* ========== АДАПТАЦИЯ ДЛЯ НОУТБУКОВ (1025px - 1440px) ========== */
+@media (max-width: 1440px) {
+    header {
+        padding: 1rem 2rem;
+        justify-content: space-between;
+    }
+
+    .nav li {
+        padding: 30px 25px;
+        font-size: 22px;
+    }
+
+    .loginquit .button {
+        width: 180px;
+        font-size: 22px;
+    }
+
+    /* Секция преподавателей */
+    .teachers-section {
+        max-width: 95%;
+        padding: 0 1rem;
+    }
+
+    .teachers-section h2 {
+        font-size: 2.2rem;
+        margin-bottom: 30px;
+    }
+
+    .teachers-grid {
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .teacher-card {
+        padding: 25px;
+    }
+
+    .teacher-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .teacher-card p {
+        font-size: 1rem;
+    }
+
+    .img-modal {
+        height: 280px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 1280px) {
+    .nav li {
+        padding: 30px 18px;
+        font-size: 20px;
+    }
+
+    .logo-a {
+        width: 180px;
+    }
+
+    .loginquit .button {
+        width: 150px;
+        font-size: 20px;
+        height: 45px;
+    }
+
+    .teachers-grid {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+    .teacher-card {
+        padding: 20px;
+    }
+
+    .img-modal {
+        height: 250px;
+    }
+}
+
+/* ========== АДАПТАЦИЯ ДЛЯ ПЛАНШЕТОВ (769px - 1024px) ========== */
+@media (max-width: 1024px) {
+    /* Бургер-меню */
+    .burger {
+        display: flex;
+    }
+
+    header {
+        justify-content: space-between;
+        padding: 1rem 1.5rem;
+        min-height: 80px;
+        height: 80px;
+    }
+
+    .logo-a {
+        width: 140px;
+        z-index: 1001;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        max-width: 400px;
+        height: 100vh;
+        background: #fdecd0;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 100px;
+        transition: right 0.4s ease;
+        z-index: 1000;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu.active {
+        right: 0;
+    }
+
+    .nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav li {
+        display: block;
+        padding: 20px;
+        font-size: 22px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .loginquit {
+        width: auto;
+        z-index: 1001;
+    }
+
+    .loginquit .button {
+        width: 120px;
+        font-size: 18px;
+        height: 40px;
+    }
+
+    /* Основной контент teacher.html */
+    main {
+        margin-top: 80px;
+    }
+
+    .teachers-section {
+        max-width: 100%;
+        padding: 0 1.5rem;
+    }
+
+    .teachers-section h2 {
+        font-size: 2rem;
+        margin-bottom: 25px;
+    }
+
+    .teachers-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .teacher-card {
+        padding: 20px;
+    }
+
+    .teacher-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .teacher-card p {
+        font-size: 0.95rem;
+    }
+
+    .img-modal {
+        height: 220px;
+        margin-bottom: 1rem;
+    }
+
+    /* Модальное окно */
+    .modal-content {
+        padding: 35px 25px;
+        max-width: 90%;
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+
+    .modal-name-h {
+        font-size: 22px;
+    }
+
+    .modal-name-p,
+    .modal-name-education,
+    .modal-name-prize {
+        font-size: 16px;
+        line-height: 1.5rem;
+    }
+
+    .close-btn {
+        top: 15px;
+        right: 20px;
+        font-size: 24px;
+    }
+
+    /* Футер */
+    .teacher-footer .app {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .fotter-p {
+        margin: 0 1rem;
+        font-size: 22px;
+    }
+
+    .app li {
+        width: auto;
+        margin: 0.5rem;
+    }
+}
+
+/* ========== АДАПТАЦИЯ ДЛЯ ТЕЛЕФОНОВ (320px - 768px) ========== */
+@media (max-width: 768px) {
+    header {
+        padding: 0.8rem 1rem;
+        min-height: 65px;
+        height: 65px;
+    }
+
+    .logo-a {
+        width: 100px;
+    }
+
+    .loginquit .button {
+        width: 90px;
+        font-size: 14px;
+        height: 35px;
+    }
+
+    .burger {
+        width: 30px;
+        height: 22px;
+    }
+
+    .burger.active span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .burger.active span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    .menu {
+        width: 85%;
+        max-width: 320px;
+        padding-top: 80px;
+    }
+
+    .nav li {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    main {
+        margin-top: 65px;
+    }
+
+    .teachers-section {
+        padding: 0 1rem;
+    }
+
+    .teachers-section h2 {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+
+    
+    .teachers-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    .teacher-card {
+        padding: 16px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        gap: 15px;
+    }
+
+    .teacher-card h3 {
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+
+    .teacher-card p {
+        font-size: 0.85rem;
+        margin: 5px 0;
+    }
+
+    .img-modal {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        margin-bottom: 0;
+        object-fit: cover;
+    }
+
+    /* Модальное окно на телефонах */
+    .modal-content {
+        padding: 25px 20px;
+        max-width: 95%;
+        max-height: 85vh;
+    }
+
+    .modal-name-h {
+        font-size: 18px;
+        margin-bottom: 0.5rem;
+    }
+
+    .modal-name-p,
+    .modal-name-education,
+    .modal-name-prize {
+        font-size: 14px;
+        line-height: 1.4rem;
+    }
+
+    .close-btn {
+        top: 12px;
+        right: 16px;
+        font-size: 22px;
+    }
+
+    .teacher-footer {
+        height: auto;
+        padding: 1rem;
+    }
+
+    .teacher-footer .app {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .fotter-p {
+        font-size: 16px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .app li {
+        margin: 0;
+    }
+
+    .app li img {
+        width: 35px;
+    }
+}
+
+/* ========== ДЛЯ ОЧЕНЬ МАЛЕНЬКИХ ТЕЛЕФОНОВ (до 480px) ========== */
+@media (max-width: 480px) {
+    .teachers-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .teachers-section h2 {
+        font-size: 1.3rem;
+    }
+
+    .teacher-card {
+        padding: 12px;
+        gap: 12px;
+    }
+
+    .img-modal {
+        height: 65px;
+        width: 65px;
+    }
+
+    .teacher-card h3 {
+        font-size: 0.9rem;
+    }
+
+    .teacher-card p {
+        font-size: 0.75rem;
+    }
+
+    .modal-name-h {
+        font-size: 16px;
+    }
+
+    .modal-name-p,
+    .modal-name-education,
+    .modal-name-prize {
+        font-size: 12px;
+        line-height: 1.3rem;
+    }
+
+    .modal-content {
+        padding: 20px 15px;
+    }
+}
+
+/* ========== ДЛЯ ТЕЛЕФОНОВ В ЛАНДШАФТНОЙ ОРИЕНТАЦИИ ========== */
+@media (max-width: 900px) and (orientation: landscape) {
+    header {
+        min-height: 60px;
+        height: 60px;
+    }
+
+    main {
+        margin-top: 60px;
+    }
+
+    .menu {
+        padding-top: 70px;
+    }
+
+    .nav li {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .teachers-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .teacher-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .img-modal {
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+    }
+
+    .modal-content {
+        max-height: 90vh;
+    }
+}
+
+/* ========== ДЛЯ ПЛАНШЕТОВ В ЛАНДШАФТНОЙ ОРИЕНТАЦИИ (768px - 1024px) ========== */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .teachers-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .teacher-card {
+        padding: 15px;
+    }
+
+    .img-modal {
+        height: 180px;
+    }
+
+    .teacher-card h3 {
+        font-size: 1rem;
+    }
+}
+
+/* ========== БЛОКИРОВКА ПРОКРУТКИ ПРИ ОТКРЫТОМ МЕНЮ ========== */
+body.menu-open {
+    overflow: hidden;
+}
+
+/* ========== ПРАВКИ ДЛЯ СТАРЫХ МЕДИА-ЗАПРОСОВ (чтобы не конфликтовали) ========== */
+@media (max-width: 664px) {
+    html {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
+    body {
+        overflow-x: hidden;
+    }
+    
+    .container {
+        overflow-x: hidden;
+    }
+}
+
+/* ========== ДОПОЛНИТЕЛЬНЫЕ ПРАВКИ ДЛЯ КАРТОЧЕК ПРЕПОДАВАТЕЛЕЙ ========== */
+@media (max-width: 1176px) {
+    .teachers-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+
+@media (max-width: 900px) {
+    .teachers-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .teachers-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Альтернативный стиль карточек на телефонах */
+    .teacher-card {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        gap: 15px;
+    }
+    
+    .img-modal {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        margin-bottom: 0;
+    }
+    
+    .teacher-card h3 {
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+    
+    .teacher-card p {
+        font-size: 0.85rem;
+    }
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
+    <title>Робошкола</title>
+    <script src="swiper/swiper-bundle.js"></script>
+    <script src="js/header-logic.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+<div class="container">
+    <header>
+        <a href="./index.html" class="logo-a"><img src="img/logo.jpg" alt="logo" class="logo" id="#!"></a>
+        <div class="menu">
+            <ul class="nav">
+                <a href="./index.html">
+                    <li>Главная</li>
+                </a>
+                <a href="./teacher.html">
+                    <li>Преподаватели</li>
+                </a>
+                <a href="./about.html">
+                    <li>О нас</li>
+                </a>
+                <a id="accountLink" href="./account.html">
+                    <li>Личный кабинет</li>
+                </a>
+                <a id="adminLink" href="./admin.html">
+                    <li>Панель администратора</li>
+                </a>
+            </ul>
+        </div>
+        <div class="loginquit">
+            <a id="loginButton" href="./login.html">
+                <button type="submit" class="button">Войти</button>
+            </a>
+            <a id="quitButton" href="#!">
+                <button type="submit" class="button">Выйти</button>
+            </a>
+        </div>
+    </header>
+    <main>
+        <section calss="about-slider" id="us">
+            <h1 class="swiper-preview">Наша Мастерская</h1>
+            <div class="mySwiper swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-img swiper-slide"><img src="img/slider1.jpg" alt="swiper1"></div>
+                    <div class="swiper-img swiper-slide"><img src="img/slider2.jpg" alt="swiper2"></div>
+                    <div class="swiper-img swiper-slide"><img src="img/slider3.jpg" alt="swiper4"></div>
+                    <div class="swiper-img swiper-slide"><img src="img/slider4.jpg" alt="swiper5"></div>
+                    <div class="swiper-img swiper-slide"><img src="img/slider5.jpg" alt="swiper6"></div>
+                    <div class="swiper-img swiper-slide"><img src="img/slider6.jpg" alt="swiper7"></div>
+                    <div class="swiper-img swiper-slide"><img src="img/slider.jpg" alt="swiper8"></div>
+                </div>
+            </div>
+        </section>
+        <section class="review" id="review">
+            <h1 class="review-preview">Статистика</h1>
+            <div class="review__statistics__inner">
+                <div class="review__item">
+                    <h2 class="review__item-title">300+</h2>
+                    <p class="review__item-text">выпускников</p>
+                </div>
+                <div class="review__item">
+                    <h2 class="review__item-title">90%</h2>
+                    <p class="review__item-text">поступили в колледж</p>
+                </div>
+                <div class="review__item">
+                    <h2 class="review__item-title">около 20</h2>
+                    <p class="review__item-text">мастерских кухон</p>
+                </div>
+                <div class="review__item">
+                    <h2 class="review__item-title">сотни</h2>
+                    <p class="review__item-text">вкусных рецептов</p>
+                </div>
+            </div>
+        </section>
+        <h2 class="swiper-h">Где мы находимся?</h2>
+        <div style="position:relative;overflow:hidden; margin-top: 1rem; margin-bottom: 2rem; text-align: center; margin-left: 1rem; margin-right: 1rem;">
+            <a href="https://yandex.ru/maps/54/yekaterinburg/?utm_medium=mapframe&utm_source=maps"
+               style="color:#eee;font-size:12px;position:absolute;top:0px;">Екатеринбургский экономико-технологический
+                колледж</a><a
+                href="https://yandex.ru/maps/54/yekaterinburg/house/yasnaya_ulitsa_1k5/YkkYcw9lT0AEQFtsfXRwdH1kZw==/?ll=60.585707%2C56.815125&utm_medium=mapframe&utm_source=maps&z=18.33"
+                style="color:#eee;font-size:12px;position:absolute;top:14px;">Ясная улица, 1к5 — Яндекс Карты</a>
+            <iframe src="https://yandex.ru/map-widget/v1/?ll=60.585707%2C56.815125&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjA3MzM0MRJs0KDQvtGB0YHQuNGPLCDQodCy0LXRgNC00LvQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsINCV0LrQsNGC0LXRgNC40L3QsdGD0YDQsywg0K_RgdC90LDRjyDRg9C70LjRhtCwLCAx0Lo1IgoNtldyQhW9QmNC&z=18.33"
+                    width="90%" height="500" allowfullscreen="true" style="position:relative;"></iframe>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-link">
+            <ul class="app">
+                <li><a href="#!"><img src="img/vkon.svg" alt="vk" class="vk"></a></li>
+                <li><a href="#!"><img src="img/max.jpg" alt="wapp" class="max"></a></li>
+                <p class="fotter-p">info@eetk.ru</p>
+            </ul>
+
+        </div>
+    </footer>
+</div>
+</body>
+</html>

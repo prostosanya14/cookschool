@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Личный кабинет Робошкола</title>
+    <script src="js/tester/login-test.js"></script>
+    <script type="module" src="js/getter/account-getter-order.js"></script>
+    <script type="module" src="js/form-logic/account-add-order-form.js"></script>
+    <script src="js/header-logic.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+<div class="container">
+    <header>
+        <a href="./index.html" class="logo-a"><img src="img/logo.jpg" alt="logo" class="logo" id="#!"></a>
+        <div class="menu">
+            <ul class="nav">
+                <a href="./index.html">
+                    <li>Главная</li>
+                </a>
+                <a href="./teacher.html">
+                    <li>Преподаватели</li>
+                </a>
+                <a href="./about.html">
+                    <li>О нас</li>
+                </a>
+                <a id="accountLink" href="./account.html">
+                    <li>Личный кабинет</li>
+                </a>
+                <a id="adminLink" href="./admin.html">
+                    <li>Панель администратора</li>
+                </a>
+            </ul>
+        </div>
+        <div class="loginquit">
+            <a id="loginButton" href="./login.html">
+                <button type="submit" class="button">Войти</button>
+            </a>
+            <a id="quitButton" href="#!">
+                <button type="submit" class="button">Выйти</button>
+            </a>
+        </div>
+    </header>
+    <main>
+        <h1 class="kurs-prev2">Личный кабинет</h1>
+        <div class="user-info-bar">
+            Вы вошли как: <b id="userEmail">...</b>
+            | Возраст: <b id="userAge">...</b>
+        </div>
+        <section class="add">
+            <h2 class="kurs-h2">Подать заявку</h2>
+            <form id="order-form" class="form2">
+                <div class="form-inputs">
+                    Категория<select id="productName" required>
+                    <option value="Дошкольник">Дошкольник</option>
+                    <option value="Школьник">Школьник</option>
+                    <option value="Студент">Студент</option>
+                </select>
+                    Выбор курса<select name="курс" id="kurs" required>
+                    <option value="Кондитерское искусство">Кондитерское искусство</option>
+                    <option value="Современная выпечка">Современная выпечка</option>
+                    <option value="Декор и оформление">Декор и оформление</option>
+                </select>
+                </div>
+                <button class="button-form" type="submit">Отправить</button>
+            </form>
+        </section>
+        <section class="add2">
+            <h2 class="kurs-h2">Ваши заявки</h2>
+            <div class="table-kurs">
+                <div id="myOrdersInner">
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer2">
+        <div class="footer-link">
+            <ul class="app">
+                <li>
+                    <a href="#!"><img src="img/vkon.svg" alt="vk"></a>
+                </li>
+                <li>
+                    <a href="#!"><img src="img/max.jpg" alt="wapp" class="max"></a>
+                </li>
+                <p class="fotter-p">info@eetk.ru</p>
+            </ul>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

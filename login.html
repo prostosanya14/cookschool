@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Авторизация в Робошколе</title>
+    <script  type="module" src="js/form-logic/login-form.js"></script>
+    <script src="js/header-logic.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+<div class="container">
+    <header>
+        <a href="./index.html" class="logo-a"><img src="img/logo.jpg" alt="logo" class="logo" id="#!"></a>
+        <div class="menu">
+            <ul class="nav">
+                <a href="./index.html">
+                    <li>Главная</li>
+                </a>
+                <a href="./teacher.html">
+                    <li>Преподаватели</li>
+                </a>
+                <a href="./about.html">
+                    <li>О нас</li>
+                </a>
+                <a id="accountLink" href="./account.html">
+                    <li>Личный кабинет</li>
+                </a>
+                <a id="adminLink" href="./admin.html">
+                    <li>Панель администратора</li>
+                </a>
+            </ul>
+        </div>
+        <div class="loginquit">
+            <a id="loginButton" href="./login.html">
+                <button type="submit" class="button">Войти</button>
+            </a>
+            <a id="quitButton" href="#!">
+                <button type="submit" class="button">Выйти</button>
+            </a>
+        </div>
+    </header>
+    <h1 class="kurs-prev2">Авторизация</h1>
+    <form id="login-form" class="form2">
+        <div class="form-inputs">
+            Почта<input type="email" minlength="6" required id="email" placeholder="Укажите здесь вашу почту...">
+            Пароль<input type="password" id="pass" required placeholder="Укажите здесь ваш пароль...">
+        </div>
+        <button class="button-form" type="submit">Войти</button>
+        <p>Нет аккаунта?
+            <a href="reg.html" class="form-a">Зарегистрироваться</a>
+        </p>
+    </form>
+    <footer class="footer-login">
+        <div class="footer-link">
+            <ul class="app">
+                <li>
+                    <a href="#!"><img src="img/vkon.svg" alt="vk"></a>
+                </li>
+                <li>
+                    <a href="#!"><img src="img/max.jpg" alt="wapp" class="max"></a>
+                </li>
+                <p class="fotter-p">info@eetk.ru</p></ul>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

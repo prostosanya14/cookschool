@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Робошкола</title>
+    <script src="js/header-logic.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+<div class="container">
+    <header>
+        <a href="./index.html" class="logo-a"><img src="img/logo.jpg" alt="logo" class="logo" id="#!"></a>
+        <div class="menu">
+            <ul class="nav">
+                <a href="./index.html">
+                    <li>Главная</li>
+                </a>
+                <a href="./teacher.html">
+                    <li>Преподаватели</li>
+                </a>
+                <a href="./about.html">
+                    <li>О нас</li>
+                </a>
+                <a id="accountLink" href="./account.html">
+                    <li>Личный кабинет</li>
+                </a>
+                <a id="adminLink" href="./admin.html">
+                    <li>Панель администратора</li>
+                </a>
+            </ul>
+        </div>
+        <div class="loginquit">
+            <a id="loginButton" href="./login.html">
+                <button type="submit" class="button">Войти</button>
+            </a>
+            <a id="quitButton" href="#!">
+                <button type="submit" class="button">Выйти</button>
+            </a>
+        </div>
+    </header>
+    <main>
+        <section class="teachers-section">
+            <h2>Наши преподаватели</h2>
+            <div class="teachers-grid">
+                <!-- Карточка преподавателя -->
+                <div class="teacher-card" onclick="showModal(0)">
+                    <img src="img/yakutova.jpg" class="img-modal"></img>
+                    <h3>Якутова Ирина Александровна</h3>
+                    <p>Стаж: 19 лет</p>
+                </div>
+                <div class="teacher-card" onclick="showModal(1)">
+                    <img src="img/kuzevanova.jpg" class="img-modal"></img>
+                    <h3>Кузеванова Татьяна Александровна</h3>
+                    <p>Стаж: 22 года</p>
+                </div>
+                <div class="teacher-card" onclick="showModal(2)">
+                    <img src="img/zueva.jpg" class="img-modal"></img>
+                    <h3>Зуева Светлана Валентиновна</h3>
+                    <p>Стаж: 42 года</p>
+                </div>
+                <div class="teacher-card" onclick="showModal(3)">
+                    <img src="img/ivanova.jpg" class="img-modal"></img>
+                    <h3>Иванова Елена Васильевна</h3>
+                    <p>Стаж: 16 лет</p>
+                </div>
+                <div class="teacher-card" onclick="showModal(4)">
+                    <img src="img/kadochnikov.jpg" class="img-modal"></img>
+                    <h3>Кадочников Дмитрий Михайлович</h3>
+                    <p>Стаж: 8 лет</p>
+                </div>
+                <div class="teacher-card" onclick="showModal(5)">
+                    <img src="img/raskovalova.jpg" class="img-modal"></img>
+                    <h3>Расковалова Эльмира Мирхатовна</h3>
+                    <p>Стаж: 27 лет</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Модальное окно -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal()">×</span>
+                <h3 id="modal-name" class="modal-name-h"></h3>
+                <p id="modal-description" class="modal-name-p"></p>
+                <p id="modal-education" class="modal-name-education"></p>
+                <p id="modal-prize" class="modal-name-prize"></p>
+
+            </div>
+        </div>
+
+
+    </main>
+    <footer class="teacher-footer">
+        <div class="footer-link">
+            <ul class="app">
+                <li><a href="#!"><img src="img/vkon.svg" alt="vk"></a></li>
+                <li><a href="#!"><img src="img/max.jpg" alt="wapp" class="max"></a></li>
+                <p class="fotter-p">info@eetk.ru</p>
+            </ul>
+        </div>
+    </footer>
+    <script src="js/teacher-modal.js"></script>
+</div>
+</body>
+</html>
