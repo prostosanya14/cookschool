@@ -3,8 +3,6 @@
 header('Access-Control-Allow-Headers: Content-Type');
 header('Content-Type: application/json');
 
-
-
 try {
     mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
@@ -36,8 +34,6 @@ try {
         ]);
         exit();
     }
-
-
 
 } catch (PDOException $e) {
     http_response_code(500);

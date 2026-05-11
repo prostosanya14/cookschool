@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -187,9 +186,7 @@ button:hover {
     font-weight: 500;
 }
 
-.kurs {
-    /* padding: 3rem; */
-}
+
 
 .kurs-prev {
     text-align: center;
@@ -640,36 +637,35 @@ label {
 
 .teachers-section h2 {
     text-align: center;
-    margin-bottom: 40px; /* Увеличили отступ после заголовка */
-    font-size: 2.5rem; /* Крупный заголовок */
-    color: #2c3e50; /* Насыщенный цвет */
+    margin-bottom: 40px; 
+    font-size: 2.5rem;
+    color: #2c3e50; 
 }
 
-/* Сетка карточек - стала адаптивнее */
 .teachers-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Минимальная ширина карточки 300px */
-    gap: 25px; /* Расстояние между карточками */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 25px; /
 }
 
-/* Стиль карточки преподавателя - ОСНОВНЫЕ ИЗМЕНЕНИЯ ЗДЕСЬ */
+
 .teacher-card {
-    background-color: #ffffff; /* Чистый белый фон */
-    border-radius: 12px; /* Более плавные углы */
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); /* Мягкая тень для объема */
-    padding: 35px; /* Увеличили внутренний отступ, чтобы было куда писать */
+    background-color: #ffffff; 
+    border-radius: 12px; 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); 
+    padding: 35px; 
     text-align: center;
     cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Плавная анимация */
-    display: flex; /* Включаем Flexbox для удобного расположения контента */
-    flex-direction: column; /* Располагаем элементы вертикально */
-    justify-content: space-between; /* Отступы распределяются равномерно */
-    height: 100%; /* Карточка занимает всю высоту ячейки сетки */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    height: 100%; 
 }
 
 .teacher-card:hover {
-    transform: translateY(-8px); /* Поднимается выше при наведении */
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12); /* Тень становится больше */
+    transform: translateY(-8px); 
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12); 
 }
 
 .teacher-card h3 {
@@ -681,12 +677,9 @@ label {
 .teacher-card p {
     margin: 8px 0;
     font-size: 1.2rem;
-    color: black; /* Серый цвет для второстепенного текста (стаж) */
+    color: black; 
 }
 
-/* Добавим место для дополнительной информации (например, предмет или звание) */
-
-/* Стили модального окна - тоже немного улучшим */
 .modal {
     display: none;
     position: fixed;
@@ -702,7 +695,7 @@ label {
 
 .modal-content {
     background-color: #fff;
-    padding: 45px 35px; /* Больше отступов в модалке для длинного текста */
+    padding: 45px 35px; 
     border-radius: 12px;
     width: 95%;
     max-width: 750px;
@@ -758,14 +751,12 @@ label {
 }
 
 .order-row:hover {
-    background-color: #f0f0f0; /* Подсветка при наведении */
+    background-color: #f0f0f0; 
 }
-
 
 #quitButton, #accountLink, #adminLink, .admin-only-content {
     display: none;
 }
-
 
 .user-info-bar {
     text-align: center;
@@ -779,7 +770,6 @@ label {
 .user-info-bar b {
     color: #fca017;
 }
-
 
 
 /* АДАПТАЦИЯ */
